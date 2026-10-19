@@ -1,0 +1,12 @@
+{
+  "pipeline": "new-project",
+  "target": "Analiza el proyecto solamente",
+  "completed": [
+    {
+      "name": "plan#1",
+      "ok": false,
+      "returncode": 41,
+      "output_file": "/mnt/disco-local/Proyects/compared-products/price-comparator-frontend/PLAN.md"
+    }
+  ]
+}
