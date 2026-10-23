@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { SearchBar } from './components/SearchBar';
+import { ProductDetailView } from './components/ProductDetailView';
 
 export default function App() {
   const [selectedProductId, setSelectedProductId] = useState<string>('prod-001');
@@ -20,11 +21,7 @@ export default function App() {
         onSelectProduct={(id) => setSelectedProductId(id)}
       />
 
-      <section style={{ background: '#f9fafb', border: '1px dashed #d1d5db', borderRadius: '8px', padding: '1.5rem', textAlign: 'center' }}>
-        <p style={{ margin: 0, color: '#374151' }}>
-          Producto activo actualmente: <strong>{selectedProductId}</strong>
-        </p>
-      </section>
+      <ProductDetailView productId={selectedProductId} />
     </div>
   );
 }
